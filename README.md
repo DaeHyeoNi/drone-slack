@@ -8,6 +8,8 @@
 Drone plugin for sending Slack notifications. For the usage information and a
 listing of the available options please take a look at [the docs](DOCS.md).
 
+Note: this is the fork of the official Drone slack plugin. It changes the default output of the notification to slack to be better formatted.
+
 ## Build
 
 Build the binary with the following commands:
@@ -55,7 +57,7 @@ docker run --rm \
   -e DRONE_BUILD_STATUS=success \
   -e DRONE_BUILD_LINK=http://github.com/octocat/hello-world \
   -e DRONE_TAG=1.0.0 \
-  plugins/slack
+  themaz/drone-slack
 ```
 
 ## Output
