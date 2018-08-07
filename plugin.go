@@ -103,6 +103,11 @@ func fields(repo Repo, build Build) []*slack.AttachmentField {
 			Short: true,
 		},
 		&slack.AttachmentField{
+			Title: "Build Number",
+			Value: fmt.Sprintf("%d", build.Number),
+			Short: true,
+		},
+		&slack.AttachmentField{
 			Title: "Commit",
 			Value: fmt.Sprintf("<%s|%s>", build.CommitLink, build.Commit[:12]),
 			Short: true,
@@ -110,7 +115,7 @@ func fields(repo Repo, build Build) []*slack.AttachmentField {
 		&slack.AttachmentField{
 			Title: "Author",
 			Value: build.Author,
-			Short: false,
+			Short: true,
 		},
 		&slack.AttachmentField{
 			Title: "Commit Message",
