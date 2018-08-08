@@ -6,11 +6,11 @@ go:
   - 1.10.3
 script:
   - go build -ldflags "-s -w -X main.build=$TRAVIS_BUILD_NUMBER" -a -tags netgo
-  - docker build -t themaz/drone-slack .
+  - docker build -t chatkitinc/drone-slack .
 after_success:
   - if [ "$TRAVIS_BRANCH" == "master" ]; then
     docker login -u="$DOCKER_USERNAME" -p="$DOCKER_PASSWORD";
-    docker push themaz/drone-slack;
-    docker tag themaz/drone-slack themaz/drone-slack:0.1.$TRAVIS_BUILD_NUMBER;
-    docker push themaz/drone-slack:0.1.$TRAVIS_BUILD_NUMBER;
+    docker push chatkitinc/drone-slack;
+    docker tag chatkitinc/drone-slack chatkitinc/drone-slack:0.1.$TRAVIS_BUILD_NUMBER;
+    docker push chatkitinc/drone-slack:0.1.$TRAVIS_BUILD_NUMBER;
     fi
