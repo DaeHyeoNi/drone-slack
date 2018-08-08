@@ -1,9 +1,6 @@
 # drone-slack
 
-[![Build Status](http://beta.drone.io/api/badges/drone-plugins/drone-slack/status.svg)](http://beta.drone.io/drone-plugins/drone-slack)
-[![Go Doc](https://godoc.org/github.com/drone-plugins/drone-slack?status.svg)](http://godoc.org/github.com/drone-plugins/drone-slack)
-[![Go Report](https://goreportcard.com/badge/github.com/drone-plugins/drone-slack)](https://goreportcard.com/report/github.com/drone-plugins/drone-slack)
-[![Join the chat at https://gitter.im/drone/drone](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/drone/drone)
+[![Build Status](https://travis-ci.org/chatkit/drone-slack.svg?branch=master)](https://travis-ci.org/chatkit/drone-slack)
 
 Drone plugin for sending Slack notifications. For the usage information and a
 listing of the available options please take a look at [the docs](DOCS.md).
@@ -57,7 +54,7 @@ docker run --rm \
   -e DRONE_BUILD_STATUS=success \
   -e DRONE_BUILD_LINK=http://github.com/octocat/hello-world \
   -e DRONE_TAG=1.0.0 \
-  themaz/drone-slack
+  chatkitinc/drone-slack
 ```
 
 ## Output
