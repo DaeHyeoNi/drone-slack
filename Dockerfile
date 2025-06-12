@@ -1,9 +1,10 @@
-FROM alpine:3.4
+FROM --platform=$BUILDPLATFORM alpine:latest
 
 RUN apk update && \
   apk add \
     ca-certificates && \
   rm -rf /var/cache/apk/*
 
-ADD drone-slack /bin/
+ARG TARGETARCH
+COPY bin/drone-slack-${TARGETARCH} /bin/drone-slack
 ENTRYPOINT ["/bin/drone-slack"]

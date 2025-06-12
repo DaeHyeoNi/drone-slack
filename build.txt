@@ -1,0 +1,8 @@
+# amd64
+GOOS=linux GOARCH=amd64 go build -o bin/drone-slack-amd64
+
+# arm64
+GOOS=linux GOARCH=arm64 go build -o bin/drone-slack-arm64
+
+docker buildx create --use
+docker buildx build --platform linux/amd64,linux/arm64 -t daehyeoni/drone-slack:latest --push . 

@@ -1,0 +1,22 @@
+# github.com/Sirupsen/logrus v0.8.7
+## explicit
+github.com/Sirupsen/logrus
+# github.com/aymerick/raymond v1.1.1-0.20150615143341-47851533fc30
+## explicit
+github.com/aymerick/raymond
+github.com/aymerick/raymond/ast
+github.com/aymerick/raymond/lexer
+github.com/aymerick/raymond/parser
+# github.com/bluele/slack v0.0.0-20160701052351-ffdcd19858d0
+## explicit
+github.com/bluele/slack
+# github.com/joho/godotenv v0.0.0-20150907010228-4ed13390c0ac
+## explicit
+github.com/joho/godotenv
+# github.com/stretchr/testify v1.10.0
+## explicit; go 1.17
+# github.com/urfave/cli v1.18.1-0.20160726011403-d9021faab69f
+## explicit
+github.com/urfave/cli
+# gopkg.in/yaml.v2 v2.4.0
+## explicit; go 1.15
